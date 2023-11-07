@@ -18,7 +18,7 @@ document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
     video.play();
     volumeText = document.querySelector("#volume");
-    volumeText.innerHTML = "100%";
+    volumeText.innerHTML = video.volume*100 + "%";
 });
 
 // pause button
